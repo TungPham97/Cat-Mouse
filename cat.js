@@ -1,4 +1,7 @@
 function Cat(){
-
+    this.stomach = [];
 }
-module.exports = Mouse;
+Cat.prototype.eat = function(animal){
+    this.stomach.push(animal)
+}
+module.exports = Cat;
